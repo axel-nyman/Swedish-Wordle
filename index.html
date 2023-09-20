@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>Wordle Swe</title>
+</head>
+<body>
+    <h1 class="ibm" id="title">GISSA ORDET</h1>
+    <section class="section">
+        <input type="text" class="input" id="1"></input>
+        <input type="text" class="input" id="2"></input>
+        <input type="text" class="input" id="3"></input>
+        <input type="text" class="input" id="4"></input>
+        <input type="text" class="input" id="5"></input>
+        <div class="div" id="enter-div">
+            <div id="image-enter" onclick="guess()"></div>
+            <p class="ibm" id="enter" onclick="guess()">Enter</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="ibm" id="reveal"></h2>
+    </section>
+
+    <section class="section div" id="new-div">
+        <div id="image-space" onclick="nextWord()"></div>
+        <div class="ibm" id="new" onclick="nextWord()">TRYCK MELLANSLAG FÖR NYTT ORD</div>
+    </section>
+
+    <div id="colors">
+        <p class="ibm"> <b class="green">GRÖN - </b>Bokstaven är på rätt plats i ordet.</p>
+        <p class="ibm"> <b class="yellow">GUL - </b>Bokstaven finns i ordet, men på en annan plats.</p>
+        <p class="ibm"> <b class="red">RÖD - </b>Bokstaven finns inte alls med i ordet.</p>
+    </div>
+
+</body>
+<script src="/scripts/script.js"></script>
+</html>

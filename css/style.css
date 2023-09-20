@@ -1,0 +1,122 @@
+:root {
+    --clr-blk: black;
+    --clr-grey: #DBDBDB;
+    --clr-drk-grey: #A6A6A6;
+    --clr-drk-ylw: #8d7d53;
+    --clr-ylw: #FEE191;
+    --clr-drk-red: #77242f;
+    --clr-red: #E84258;
+    --clr-drk-grn: #5d7256;
+    --clr-grn: #B0D8A4;
+}
+
+.ibm {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+#title {
+    text-align: center;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 1em;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 1.25em;
+    height: 2em;
+    border-radius: 10%;
+    border: var(--clr-blk) solid .3rem;
+    background-color: var(--clr-grey);
+    text-transform: uppercase;
+    font-family: 'VT323', monospace;
+    font-size: 7rem;
+    line-height: 10rem;
+    margin: .2em;
+    text-align: center;
+    cursor: default;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0px 0px .25em .0125em #7FB2F9;
+    caret-color: transparent;
+}
+
+#enter {
+    margin: 0em;
+    cursor: pointer;
+}
+
+#image-enter {
+    background-image: url("/images/enter.png");
+    background-size: contain;
+    height: 8rem;
+    width: 8rem;
+}
+
+#enter-div {
+    position: absolute;
+    right: 6rem;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes opacity {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+  }
+
+#new {
+    cursor: pointer;
+}
+
+#image-space {
+    background-image: url("/images/space.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 3.5rem;
+    width: 10rem;
+    margin: 1em;
+    cursor: pointer;
+}
+
+#new-div {
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#colors {
+    position: absolute;
+    left: 2em;
+    bottom: 2em;
+    background-color: var(--clr-drk-grey);
+    padding: 1em;
+    font-size: 0.6rem;
+}
+
+.green {
+    color: var(--clr-grn);
+}
+
+.yellow {
+    color: var(--clr-ylw);
+}
+
+.red {
+    color: var(--clr-red);
+}
